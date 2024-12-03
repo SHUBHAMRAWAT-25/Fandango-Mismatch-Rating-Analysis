@@ -1,13 +1,69 @@
-🎬 Fandango-Rating Mismatch Project: Exposing the Truth Behind Movie Ratings
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <h1>🎬 Fandango-Rating Mismatch Project</h1>
+  <p><strong>Exposing the Truth Behind Movie Ratings</strong></p>
 
-When it comes to deciding on a movie night out with friends and family, how much do you trust online reviews and ratings? It's a question that's been on my mind for a while, especially considering the incentives of some platforms.
+  <h2>📌 Project Overview</h2>
+  <p>
+    When it comes to deciding on a movie night out with friends and family, how much do you trust online reviews and ratings? This project explores this question, with a particular focus on the discrepancies between Fandango's ratings and those of other popular platforms like Rotten Tomatoes, IMDb, and Metacritic.
+  </p>
 
-In my recent project, I delved deep into the world of movie ratings, particularly focusing on the discrepancies between Fandango's ratings and those of other popular sites like Rotten Tomatoes, IMDb, and Metacritic. What I found was eye-opening.
+  <h2>🔍 Key Findings</h2>
+  <ul>
+    <li>Fandango's ratings exhibited a consistent upward bias compared to other platforms.</li>
+    <li>Movies rated highly on Fandango often scored lower on Rotten Tomatoes, IMDb, and Metacritic.</li>
+    <li>Highlighted potential conflicts of interest, as Fandango is both a ticket seller and reviewer.</li>
+  </ul>
 
-Despite being a go-to platform for purchasing movie tickets, Fandango's ratings seemed to be out of sync with the consensus on other platforms. It raised questions about the integrity of the ratings system and whether there's a conflict of interest at play.
+  <h2>📂 Datasets</h2>
+  <ul>
+    <li><strong>fandango_scrape.csv:</strong> Contains movie ratings data scraped from Fandango.</li>
+    <li><strong>all_sites_scores.csv:</strong> Contains aggregated ratings from multiple platforms, including Rotten Tomatoes, IMDb, and Metacritic.</li>
+  </ul>
 
-Comparing Fandango's ratings with those of other sites revealed a stark contrast. Movies that received high ratings on Fandango often fell short on other platforms, painting a picture of inflated scores that may mislead consumers.
+  <h2>📈 Visualizations</h2>
+  <p>The analysis includes the following visualizations, which are implemented in <strong>Fandango-Rating Mismatch (1).ipynb</strong>:</p>
+  <ul>
+    <li><strong>Histplot:</strong> To visualize the distribution of ratings across platforms.</li>
+    <li><strong>Scatterplot:</strong> To show relationships between Fandango ratings and other platforms.</li>
+    <li><strong>Clustermap:</strong> To explore similarities and clustering among platforms based on their ratings.</li>
+    <li><strong>KDE Plot:</strong> To examine the density of ratings for comparative analysis.</li>
+  </ul>
 
-In my final analysis, it became clear that Fandango's rating system may not always reflect the true quality of a movie. This raises concerns about transparency and consumer trust, especially in an industry where ticket sales can be influenced by ratings.
+  <h2>💻 How to Run the Project</h2>
+  <ol>
+    <li>Clone the repository:
+      <pre><code>git clone https://github.com/SHUBHAMRAWAT-25/Fandango-Mismatch-Rating-Analysis.git
+cd fandango-rating-mismatch
+      </code></pre>
+    </li>
+    <li>Install the required libraries:
+      <pre><code>pip install -r requirements.txt</code></pre>
+    </li>
+    <li>Run the Jupyter Notebook:
+      <pre><code>jupyter notebook "Fandango-Rating Mismatch (1).ipynb"</code></pre>
+    </li>
+    <li>Ensure the datasets (<strong>fandango_scrape.csv</strong> and <strong>all_sites_scores.csv</strong>) are in the same directory as the notebook.</li>
+  </ol>
 
-Final Thoughts: The findings from this project underscore the importance of critical thinking when relying on online ratings. It's essential for consumers to consider multiple sources and not rely solely on one platform. As for Fandango, it's crucial for them to address these discrepancies and prioritize accuracy and transparency in their ratings.
+  <h2>🛠️ Tools Used</h2>
+  <ul>
+    <li><strong>Python Libraries:</strong> Pandas, Matplotlib, Seaborn, NumPy.</li>
+    <li><strong>Jupyter Notebook:</strong> For analysis and visualization.</li>
+  </ul>
+
+  <h2>📜 License</h2>
+  <p>
+    This project is licensed under the MIT License. See the <a href="LICENSE">LICENSE</a> file for details.
+  </p>
+
+  <h2>🤝 Contributors</h2>
+  <p><strong>Shubham Rawat</strong></p>
+  <p>Data Scientist in progress<br>Passionate about uncovering insights through data.</p>
+</body>
+</html>
